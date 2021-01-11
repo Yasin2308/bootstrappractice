@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery & Bootstrap </title>
+
+        <!-- All CSS Here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <div class="container">
+		<nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+			<a href="#" class="navbar-brand">
+				<img src="img/Desert.jpg" alt="Demo Image" style="width:50px;" />
+			</a>
+			<button type="button" class="navbar-toggler" data-target="#myMenuToggler" data-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myMenuToggler">
+				<ul class="navbar-nav mr-auto ml-3">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Menu Item</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Menu Item</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Menu Item</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu Item</a>
+						<div class="dropdown-menu mt-3">
+							<a href="#" class="dropdown-item">DD Item</a>
+							<a href="#" class="dropdown-item">DD Item</a>
+							<a href="#" class="dropdown-item">DD Item</a>
+							<a href="#" class="dropdown-item">DD Item</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Menu Item</a>
+					</li>					
+				</ul>
+			</div>
+			<form action="#" class="form-inline d-none d-sm-inline">
+				<input type="search" class="form-control" />
+				<button class="btn btn-light">Search</button>
+			</form>
+		</nav>	<!-- nav -->
+		
+		<div class="carousel slide d-none d-sm-block" data-ride="carousel" id="demo">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/Koala.jpg" alt="" class="img-fluid" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/Hydrangeas.jpg" alt="" class="img-fluid" />
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="text-danger">This is our carousel caption heading</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<a href="#" class="btn btn-warning">Click Here</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/Jellyfish.jpg" alt="" class="img-fluid" />
+				</div>				
+			</div>
+			
+			<a href="#demo" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#demo" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>			
+			
+		</div>
+		
+		<h2>Modal:</h2>
+		
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Click Me</button>
+		
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2>Modal Heading</h2>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<h4>this is modal body heading</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="alert alert-success">
+			<strong>Success! To solve this problem <a href="#" class="alert-link">Click Here</a></strong>
+		</div>
+		<div class="alert alert-warning alert-dismissible fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Warning!</strong> To solve this problem <a href="#" class="alert-link">Click Here</a>
+		</div>		
+		<div class="alert alert-info alert-dismissible fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Info!</strong>
+		</div>		
+		<div class="alert alert-danger">
+			<strong>Danger!</strong>
+		</div>
+		<h2>Collapse:</h2>
+
+	<button class="btn btn-success" data-toggle="collapse" href="#demo">Click Me</button>
+	<div id="" class="collapse show">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	
+	<div id="accordion">
+		<div class="card">
+			<div class="card-header">
+				<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">Demo Question 1</a>
+			</div>
+			<div id="collapseOne" class="collapse">
+				<div class="card-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>			
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">Demo Question 2</a>
+			</div>
+			<div id="collapseTwo" class="collapse">
+				<div class="card-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>			
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">Demo Question 3</a>
+			</div>
+			<div id="collapseThree" class="collapse">
+				<div class="card-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>			
+			</div>
+		</div>	
+		<div class="card">
+			<div class="card-header">
+				<a href="#collapseFour" data-toggle="collapse" data-parent="#accordion">Demo Question 4</a>
+			</div>
+			<div id="collapseFour" class="collapse">
+				<div class="card-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>			
+			</div>
+		</div>
+        <div>
+			<h1>Pagination:</h1>
+	
+		<ul class="pagination pagination-lg">
+			<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+			<li class="page-item disabled"><a href="#" class="page-link">1</a></li>
+			<li class="page-item"><a href="#" class="page-link">2</a></li>
+			<li class="page-item active"><a href="#" class="page-link">3</a></li>
+			<li class="page-item"><a href="#" class="page-link">4</a></li>
+			<li class="page-item"><a href="#" class="page-link">Next</a></li>
+		</ul>
+		<br><br>
+		<ul class="pagination pagination">
+			<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+			<li class="page-item"><a href="#" class="page-link">1</a></li>
+			<li class="page-item"><a href="#" class="page-link">2</a></li>
+			<li class="page-item active"><a href="#" class="page-link">3</a></li>
+			<li class="page-item"><a href="#" class="page-link">4</a></li>
+			<li class="page-item"><a href="#" class="page-link">Next</a></li>
+		</ul>
+		<br><br>
+		<ul class="pagination pagination-sm">
+			<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+			<li class="page-item disabled"><a href="#" class="page-link">1</a></li>
+			<li class="page-item"><a href="#" class="page-link">2</a></li>
+			<li class="page-item active"><a href="#" class="page-link">3</a></li>
+			<li class="page-item"><a href="#" class="page-link">4</a></li>
+			<li class="page-item"><a href="#" class="page-link">Next</a></li>
+		</ul>		
+		<br><br>
+		
+		<h2>Bread Crumb</h2>	
+		
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Category</a></li>
+			<li class="breadcrumb-item"><a href="#">Post Link</a></li>
+		</ul>
+		
+		<br><br>
+		
+		<h2>List Group</h2>
+		<ul class="list-group">
+			<li class="list-group-item">List Item 1</li>
+			<li class="list-group-item active">List Item 2</li>
+			<li class="list-group-item">List Item 3</li>
+			<li class="list-group-item disabled">List Item 4</li>
+			<li class="list-group-item">List Item 5</li>
+		</ul>
+		</div>
+			<div>
+				<h1>Progress Bar:</h1>
+
+		<div class="progress" style="height:15px;">
+			<div class="progress-bar bg-warning" style="width:65%"></div>
+		</div>
+		<br><br>
+		<div class="progress" style="height:15px;">
+			<div class="progress-bar bg-success progress-bar-striped" style="width:55%"></div>
+		</div>	
+		<br><br>
+		<div class="progress">
+			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:45%"></div>
+		</div>	
+		<br><br>
+		<div class="progress" style="height:20px;">
+			<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:35%">35%</div>
+			<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:20%">20%</div>
+			<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:25%">25%</div>
+			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:15%">15%</div>
+		</div>
+        <div>
+			<h2>Table:</h2>
+
+			<table class="table table-bordered table-striped table-hover">
+				<thead>
+				  <tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Roll No</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Dipu</td>
+					<td>Hasan</td>
+					<td>02</td>
+				  </tr>
+				  <tr>
+					<td>Rubel</td>
+					<td class="table-warning">Chowdhury</td>
+					<td>06</td>
+				  </tr>
+				  <tr class="table-danger">
+					<td>Sohel</td>
+					<td>Khan</td>
+					<td>05</td>
+				  </tr>
+				  <tr>
+					<td>Sobuj</td>
+					<td>Mia</td>
+					<td>09</td>
+				  </tr>		  
+				</tbody>
+			</table>
+		</div>
+			</div>
+	
+		<br><br>
+         <div>
+			<h1>Badges:</h1>
+	
+			<h2>Instagram <span class="badge badge-primary">2.0</span></h2>
+			
+			<span class="badge badge-warning">Warning Badge</span>
+			<span class="badge badge-primary">Primary Badge</span>
+			<span class="badge badge-danger">danger Badge</span>
+			<span class="badge badge-info">Info Badge</span>
+			<span class="badge badge-success">Success Badge</span>
+			<span class="badge badge-secondary">Secondary Badge</span>
+			<span class="badge badge-light">Light Badge</span>
+			<span class="badge badge-dark">Dark Badge</span>
+			
+			<br><br>
+				
+			<span class="badge badge-pill badge-warning">Warning Badge</span>
+			<span class="badge badge-pill badge-primary">Primary Badge</span>
+			<span class="badge badge-pill badge-danger">danger Badge</span>
+			<span class="badge badge-pill badge-info">Info Badge</span>
+			<span class="badge badge-pill badge-success">Success Badge</span>
+			<span class="badge badge-pill badge-secondary">Secondary Badge</span>
+			<span class="badge badge-pill badge-light">Light Badge</span>
+			<span class="badge badge-pill badge-dark">Dark Badge</span>
+			
+			<br><br>
+			
+			<button type="button" class="btn btn-primary">
+				Facebook Like <span class="badge badge-light">200</span>
+			</button>
+		 </div>      
+	</div>     
+    <div> <br><br>
+        <h2>Form:</h2>
+	<form>
+		<fieldset class="form-group">			
+			<legend>Basic Intro:</legend>
+			
+			<div class="form-group">
+				<label class="form-control-label">First Name:</label>
+				<input class="form-control" type="text" name="firstName" placeholder="Write your first name">
+			</div>
+			<div class="form-group">
+				<label class="form-control-label">Last Name:</label>
+				<input class="form-control" type="text" name="lastName" placeholder="Write your last name">
+			</div>				
+		</fieldset>
+		
+		<fieldset class="form-group">
+			<legend>Contact Info:</legend>
+			
+			<div class="form-group">			
+				<label class="form-control-label">Email:</label>
+				<input class="form-control" type="email">
+			</div>
+			<div class="form-group">			
+				<label class="form-control-label">Number:</label>
+				<input class="form-control" type="tel">
+			</div>
+		</fieldset>
+		
+		<fieldset class="form-group">
+			<legend>Address:</legend>
+			<div class="form-group">				
+				<label class="form-control-label">Country:</label>
+				<select class="form-control" name="country">
+					<option>USA</option>
+					<option>Canada</option>
+					<option>Australia</option>
+					<option selected>Bangladesh</option>
+					<option>India</option>
+					<option>Pakistan</option>
+					<option>Nepal</option>
+					<option>Bhutan</option>
+				</select>
+			</div>	
+			<div class="form-group">
+				<label class="form-control-label">Proper Address:</label>
+				<textarea class="form-control" rows="5"></textarea>
+			</div>
+		</fieldset>	
+		
+		<fieldset class="form-group">		
+			<legend>Other Info:</legend>	
+			<div class="form-group">
+				<label>Select Your Gender:</label>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" name="gender" value="Male" /> Male
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" name="gender" value="Female" /> Female
+					</label>
+				</div>			
+			</div>	
+			<div class="form-group">
+				<label>Check Your Desired Career: </label>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" /> Web Designer
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" /> Web Developer
+					</label>
+				</div>	
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" /> Digital Marketer
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" /> Graphics Designer
+					</label>
+				</div>					
+			</div>
+		</fieldset>
+		
+		<button type="submit" class="btn btn-primary">Submit</button>			
+			<br><br>
+	</form>
+	
+	<h2>More Forms:</h2>
+	
+	<form>
+		<div class="form-row align-items-center">
+			<div class="col-auto">
+			<label class="sr-only" for="inlineFormInput">Name</label>
+			<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+			</div>
+			<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Username</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+				<div class="input-group-text">@</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+			</div>
+			</div>
+			<div class="col-auto">
+			<div class="form-check mb-2">
+				<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+				<label class="form-check-label" for="autoSizingCheck">
+				Remember me
+				</label>
+			</div>
+			</div>
+			<div class="col-auto">
+			<button type="submit" class="btn btn-primary mb-2">Submit</button>
+			</div>
+		</div>
+	</form>	
+		<br><br> 
+	</div> 
+	</div>
+        
+		
+        
+        <!-- All Javascript Here -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+		$('.carousel').carousel({
+			interval: 2000,
+			pause: false,
+		})
+		</script>
+        
+    </body>
+</html>
